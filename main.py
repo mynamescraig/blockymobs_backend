@@ -1,1 +1,3 @@
-print("hi")
+import discord
+
+help(discord)
