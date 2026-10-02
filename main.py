@@ -1,3 +1,4 @@
-import discord
+import os
 
-help(discord)
+bot_token = os.getenv("BOT_TOKEN")
+print(bot_token)
