@@ -1,3 +1,9 @@
+import json
+import parser
+from parser import parse_json
+
+print(parse_json("types/type_chart"))
+
 def physical(types, level, attack_type, opponent_types):
     ## SAFETY CHECKS
     if not isinstance(level, int):
@@ -11,9 +17,7 @@ def physical(types, level, attack_type, opponent_types):
     if len(opponent_types) != 2:
         raise TypeError("opponent types must be a list of 2")
 
-    ## CHECK FOR BUFFS AND DEBUFFS
-    ## TODO: Write types and effectiveness table
-
+    ## TODO: CHECK FOR BUFFS AND DEBUFFS
 
 
 
